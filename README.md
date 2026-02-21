@@ -44,3 +44,35 @@ cd module-01-layout/lab
 npm install
 npm run dev
 ```
+---
+
+## 🇬🇧 English
+
+Monorepo containing **labs, extras, challenges and projects** from Lemoncode’s Front End Master.
+
+### 🎯 Goal
+Keep a **clean and professional** delivery history, organized by modules, easy to browse and showcase later.
+
+### 🧩 Modules index
+- [Module 0 - UX](./module-00-ux)
+- [Module 1 - Layout](./module-01-layout)
+- [Module 2 - Languages](./module-02-lenguajes)
+- [Module 3 - Bundling](./module-03-bundling)
+- [Module 4 - Frameworks](./module-04-frameworks)
+- [Module 5 - MetaFrameworks](./module-05-metaframeworks)
+- [Module 6 - Testing](./module-06-testing)
+- [Module 7 - REST API](./module-07-rest-api)
+- [Module 8 - Cloud](./module-08-cloud)
+- [Module 9 - Mobility](./module-09-movilidad)
+- [Master Classes](./master-classes)
+- [Final Project / TFM](./tfm)
+
+### ✅ Deliveries status
+(See the checklist above)
+
+### ▶️ How to run a lab (example)
+```bash
+cd module-01-layout/lab
+npm install
+npm run dev
+```
