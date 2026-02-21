@@ -3,6 +3,9 @@
 ## 🇪🇸 Español
 Repositorio monorepo con **laboratorios, extras, retos y proyectos** del Máster Front End Online de Lemoncode.
 
+### 🎯 Objetivo
+Mantener un historial de entregas claro y profesional, organizado por módulos, fácil de navegar y enseñar en el futuro.
+
 ### 🧩 Índice de módulos
 - [Módulo 0 - UX](./module-00-ux)
 - [Módulo 1 - Layout](./module-01-layout)
@@ -32,33 +35,12 @@ Repositorio monorepo con **laboratorios, extras, retos y proyectos** del Máster
 - [ ] Módulo 7 - REST API
 - [ ] Módulo 8 - Cloud
 - [ ] Módulo 9 - Movilidad (si aplica)
+- [ ] Master Classes (si aplica)
+- [ ] TFM (si aplica)
 
 ### ▶️ Cómo ejecutar un laboratorio (ejemplo)
 ```bash
 cd module-01-layout/lab
 npm install
 npm run dev
----
-
-## 🇬🇧 English
-Monorepo containing **labs, extras, challenges and projects** from Lemoncode’s Front End Master.
-
-### 🧩 Modules index
-- [Module 0 - UX](./module-00-ux)
-- [Module 1 - Layout](./module-01-layout)
-- [Module 2 - Languages](./module-02-lenguajes)
-- [Module 3 - Bundling](./module-03-bundling)
-- [Module 4 - Frameworks](./module-04-frameworks)
-- [Module 5 - MetaFrameworks](./module-05-metaframeworks)
-- [Module 6 - Testing](./module-06-testing)
-- [Module 7 - REST API](./module-07-rest-api)
-- [Module 8 - Cloud](./module-08-cloud)
-- [Module 9 - Mobility](./module-09-movilidad)
-- [Master Classes](./master-classes)
-- [Final Project / TFM](./tfm)
-
-### ▶️ How to run a lab (example)
-```bash
-cd module-01-layout/lab
-npm install
-npm run dev
+```
