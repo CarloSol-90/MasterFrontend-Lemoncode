@@ -1,1 +1,64 @@
-# MasterFrontend-Lemoncode
+# Máster Front End - Lemoncode (Monorepo)
+
+## 🇪🇸 Español
+Repositorio monorepo con **laboratorios, extras, retos y proyectos** del Máster Front End Online de Lemoncode.
+
+### 🧩 Índice de módulos
+- [Módulo 0 - UX](./module-00-ux)
+- [Módulo 1 - Layout](./module-01-layout)
+- [Módulo 2 - Lenguajes](./module-02-lenguajes)
+- [Módulo 3 - Bundling](./module-03-bundling)
+- [Módulo 4 - Frameworks](./module-04-frameworks)
+- [Módulo 5 - Metaframeworks](./module-05-metaframeworks)
+- [Módulo 6 - Testing](./module-06-testing)
+- [Módulo 7 - REST API](./module-07-rest-api)
+- [Módulo 8 - Cloud](./module-08-cloud)
+- [Módulo 9 - Movilidad](./module-09-movilidad)
+- [Master Classes](./master-classes)
+- [TFM](./tfm)
+
+### ✅ Estado de entregas
+- [ ] Módulo 0 - UX
+- [ ] Módulo 1 - Layout (Lab)
+- [ ] Módulo 1 - Layout (Extra)
+- [ ] Módulo 1 - Layout (Reto)
+- [ ] Módulo 2 - Lenguajes
+- [ ] Módulo 3 - Bundling
+- [ ] Módulo 4.1 - Frameworks - React
+- [ ] Módulo 4.2 - Frameworks - Angular
+- [ ] Módulo 4.3 - Frameworks - Vue
+- [ ] Módulo 5 - Metaframeworks
+- [ ] Módulo 6 - Testing
+- [ ] Módulo 7 - REST API
+- [ ] Módulo 8 - Cloud
+- [ ] Módulo 9 - Movilidad (si aplica)
+
+### ▶️ Cómo ejecutar un laboratorio (ejemplo)
+```bash
+cd module-01-layout/lab
+npm install
+npm run dev
+---
+
+## 🇬🇧 English
+Monorepo containing **labs, extras, challenges and projects** from Lemoncode’s Front End Master.
+
+### 🧩 Modules index
+- [Module 0 - UX](./module-00-ux)
+- [Module 1 - Layout](./module-01-layout)
+- [Module 2 - Languages](./module-02-lenguajes)
+- [Module 3 - Bundling](./module-03-bundling)
+- [Module 4 - Frameworks](./module-04-frameworks)
+- [Module 5 - MetaFrameworks](./module-05-metaframeworks)
+- [Module 6 - Testing](./module-06-testing)
+- [Module 7 - REST API](./module-07-rest-api)
+- [Module 8 - Cloud](./module-08-cloud)
+- [Module 9 - Mobility](./module-09-movilidad)
+- [Master Classes](./master-classes)
+- [Final Project / TFM](./tfm)
+
+### ▶️ How to run a lab (example)
+```bash
+cd module-01-layout/lab
+npm install
+npm run dev

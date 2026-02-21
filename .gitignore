@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Builds
+dist/
+build/
+out/
+.cache/
+
+# Coverage / testing
+coverage/
+.nyc_output/
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
