@@ -75,4 +75,4 @@ Keep a **clean and professional** delivery history, organized by modules, easy t
 cd module-01-layout/lab
 npm install
 npm run dev
-```
+```commitlint test
