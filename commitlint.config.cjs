@@ -1,0 +1,36 @@
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'scope-empty': [2, 'never'],
+    'type-enum': [
+      2,
+      'always',
+      ['feat', 'fix', 'docs', 'chore', 'refactor', 'test', 'build', 'ci', 'style'],
+    ],
+    'scope-enum': [
+      2,
+      'always',
+      [
+        'm00-ux',
+        'm01-layout',
+        'm02-lenguajes',
+        'm03-bundling',
+        'm04-react',
+        'm04-angular',
+        'm04-vue',
+        'm04-svelte',
+        'm04-solid',
+        'm05-metaframeworks',
+        'm06-testing-react',
+        'm06-testing-angular',
+        'm06-e2e',
+        'm07-rest-api',
+        'm08-cloud',
+        'm09-pwa',
+        'm09-react-native',
+        'master-classes',
+        'tfm',
+      ],
+    ],
+  },
+};

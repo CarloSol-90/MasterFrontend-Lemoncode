@@ -1,0 +1,26 @@
+{
+  "name": "masterfrontend-lemoncode",
+  "version": "1.0.0",
+  "description": "Repositorio monorepo con **laboratorios, extras, retos y proyectos** del Máster Front End Online de Lemoncode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarloSol-90/MasterFrontend-Lemoncode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarloSol-90/MasterFrontend-Lemoncode/issues"
+  },
+  "homepage": "https://github.com/CarloSol-90/MasterFrontend-Lemoncode#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "husky": "^9.1.7"
+  }
+}
