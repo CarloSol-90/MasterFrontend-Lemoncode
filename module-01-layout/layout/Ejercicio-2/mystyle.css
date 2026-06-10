@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	padding: 2rem;
+	background-color: #f5f5f5;
+	color: #1f2933;
+}
+
+.themes {
+	display: flex;
+	gap: 4rem;
+	align-items: flex-start;
+}
+
+.theme-demo {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	width: 8rem;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 8rem;
+	height: 6rem;
+	border: 1px solid #6b7280;
+}
+
+.box span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.primary-font,
+.secondary-font {
+	margin: 1.25rem 0;
+	font-size: 1rem;
+}
+
+.theme-a .box {
+	border-radius: 0;
+}
+
+.theme-a .base {
+	background-color: #3f51b5;
+}
+
+.theme-a .important {
+	background-color: #1a237e;
+}
+
+.theme-a .warning {
+	background-color: #c5cae9;
+}
+
+.theme-a .primary-font {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.theme-a .secondary-font {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.theme-a .shadow {
+	box-shadow: -10px 10px 10px rgb(0 0 0 / 35%);
+}
+
+.theme-b .box {
+	border-radius: 0.5rem;
+}
+
+.theme-b .base {
+	background-color: #009688;
+}
+
+.theme-b .important {
+	background-color: #004d40;
+}
+
+.theme-b .warning {
+	background-color: #b2dfdb;
+}
+
+.theme-b .primary-font {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.theme-b .secondary-font {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.theme-b .shadow {
+	box-shadow: 10px 10px 12px rgb(0 0 0 / 35%);
+}
