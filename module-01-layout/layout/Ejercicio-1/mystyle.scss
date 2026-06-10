@@ -1,0 +1,62 @@
+@use "sass:color";
+
+$palettes: (
+	1: #ff1493,
+	2: #1e90ff,
+	3: #2e8b57
+);
+$color-step: 8%;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	padding: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6.5rem;
+	height: 5rem;
+	border-radius: 0.25rem;
+}
+
+.color-box-text {
+	color: #ffffff;
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+@each $container, $base-color in $palettes {
+	.container-#{$container} {
+		.base-color {
+			background-color: $base-color;
+		}
+
+		@for $index from 1 through 4 {
+			.darken-#{$index} {
+				background-color: color.adjust($base-color, $lightness: -$index * $color-step);
+			}
+
+			.lighten-#{$index} {
+				background-color: color.adjust($base-color, $lightness: $index * $color-step);
+			}
+		}
+	}
+}

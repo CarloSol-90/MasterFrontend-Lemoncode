@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.5rem;
+  height: 5rem;
+  border-radius: 0.25rem;
+}
+
+.color-box-text {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.container-1 .base-color {
+  background-color: #ff1493;
+}
+.container-1 .darken-1 {
+  background-color: rgb(234.2, 0, 126.5676595745);
+}
+.container-1 .lighten-1 {
+  background-color: rgb(255, 60.8, 165.7506382979);
+}
+.container-1 .darken-2 {
+  background-color: rgb(193.4, 0, 104.5182978723);
+}
+.container-1 .lighten-2 {
+  background-color: rgb(255, 101.6, 184.5012765957);
+}
+.container-1 .darken-3 {
+  background-color: rgb(152.6, 0, 82.4689361702);
+}
+.container-1 .lighten-3 {
+  background-color: rgb(255, 142.4, 203.2519148936);
+}
+.container-1 .darken-4 {
+  background-color: rgb(111.8, 0, 60.4195744681);
+}
+.container-1 .lighten-4 {
+  background-color: rgb(255, 183.2, 222.0025531915);
+}
+
+.container-2 .base-color {
+  background-color: #1e90ff;
+}
+.container-2 .darken-1 {
+  background-color: rgb(0, 123.728, 244.2);
+}
+.container-2 .lighten-1 {
+  background-color: rgb(70.8, 164.128, 255);
+}
+.container-2 .darken-2 {
+  background-color: rgb(0, 103.056, 203.4);
+}
+.container-2 .lighten-2 {
+  background-color: rgb(111.6, 184.256, 255);
+}
+.container-2 .darken-3 {
+  background-color: rgb(0, 82.384, 162.6);
+}
+.container-2 .lighten-3 {
+  background-color: rgb(152.4, 204.384, 255);
+}
+.container-2 .darken-4 {
+  background-color: rgb(0, 61.712, 121.8);
+}
+.container-2 .lighten-4 {
+  background-color: rgb(193.2, 224.512, 255);
+}
+
+.container-3 .base-color {
+  background-color: #2e8b57;
+}
+.container-3 .darken-1 {
+  background-color: rgb(35.8551351351, 108.3448648649, 67.812972973);
+}
+.container-3 .lighten-1 {
+  background-color: rgb(56.1448648649, 169.6551351351, 106.187027027);
+}
+.container-3 .darken-2 {
+  background-color: rgb(25.7102702703, 77.6897297297, 48.6259459459);
+}
+.container-3 .lighten-2 {
+  background-color: rgb(72.1210810811, 194.4789189189, 126.0637837838);
+}
+.container-3 .darken-3 {
+  background-color: rgb(15.5654054054, 47.0345945946, 29.4389189189);
+}
+.container-3 .lighten-3 {
+  background-color: rgb(102.7762162162, 204.6237837838, 147.6767567568);
+}
+.container-3 .darken-4 {
+  background-color: rgb(5.4205405405, 16.3794594595, 10.2518918919);
+}
+.container-3 .lighten-4 {
+  background-color: rgb(133.4313513514, 214.7686486486, 169.2897297297);
+}
+
+/*# sourceMappingURL=mystyle.css.map */
