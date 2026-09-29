@@ -1,0 +1,304 @@
+$background: #141414;
+$text: #f5f1ec;
+$red: #e34141;
+$muted: #aaa;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $background;
+  color: $text;
+  font-family: "Jost", Arial, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// Sticky mantiene la cabecera visible sin sacarla del flujo de la pï¿½gina.
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 32px;
+  background: rgba(20, 20, 20, 0.75);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+// El PNG es negro y transparente; invert lo hace visible sobre el fondo oscuro.
+.studio-logo {
+  width: 240px;
+  height: auto;
+  filter: invert(1);
+}
+
+.platform-title {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 3px;
+
+  span {
+    display: block;
+    color: $muted;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 4px;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  gap: 8px;
+
+  button {
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: $text;
+    font: inherit;
+    cursor: pointer;
+
+    &.active {
+      border-color: $red;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: $text;
+      color: $background;
+    }
+  }
+}
+
+main {
+  padding: 32px;
+}
+
+.intro {
+  margin-bottom: 32px;
+
+  p {
+    margin: 0 0 8px;
+    color: $red;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+  }
+}
+
+.section-title {
+  margin: 0 0 20px;
+  padding-left: 12px;
+  border-left: 3px solid $red;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.top-mobile {
+  display: none;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 48px;
+  counter-reset: ranking;
+}
+
+.top-item {
+  position: relative;
+  flex: 1 1 225px;
+  min-width: 225px;
+  margin: 0;
+  padding-left: 45px;
+  counter-increment: ranking;
+
+  // Los nï¿½meros se generan aquï¿½: no forman parte de las carï¿½tulas.
+  &::before {
+    content: counter(ranking);
+    position: absolute;
+    left: 0;
+    bottom: 42px;
+    color: $background;
+    -webkit-text-stroke: 2px $red;
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-size: 170px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  img {
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background: #0b0b0b;
+  }
+
+  h3 {
+    margin: 12px 0 0;
+    min-height: 24px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
+
+.movies {
+  // Las columnas vacías mantienen el tamaño de las tarjetas de la última fila.
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.item {
+  position: relative;
+  min-width: 0;
+  background: #1c1c1c;
+  transition: transform 0.2s;
+
+  h3 {
+    margin: 0;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
+
+.movie-image {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  background: #090909;
+
+  // Conserva tï¿½tulos y caras aunque las imï¿½genes tengan proporciones distintas.
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (hover: hover) {
+  .item:hover {
+    z-index: 1;
+    transform: scale(1.05);
+  }
+}
+
+footer {
+  padding: 64px 24px 32px;
+  background: radial-gradient(ellipse at bottom, #301212, #0b0b0b 70%);
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto 24px;
+    background: $red;
+  }
+}
+
+.footer-label {
+  color: $red;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.footer-title {
+  margin: 20px 0 32px;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.footer-credits {
+  color: $muted;
+  font-size: 13px;
+
+  p {
+    margin: 0 0 12px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .platform-title,
+  .top-desktop {
+    display: none;
+  }
+
+  .top-mobile {
+    display: inline;
+  }
+
+  .top-item:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  main {
+    padding: 20px 16px;
+  }
+
+  .studio-logo {
+    width: min(150px, calc(100vw - 170px));
+  }
+
+  .header-buttons {
+    gap: 0;
+
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .intro h2 {
+    font-size: 28px;
+  }
+}
+
+// En pantallas muy pequeï¿½as, el contenido se ajusta al espacio disponible.
+@media (max-width: 281px) {
+  .studio-logo {
+    width: 80px;
+  }
+
+  .item,
+  .top-item {
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    transition: none;
+  }
+}
