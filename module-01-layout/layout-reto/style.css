@@ -118,6 +118,7 @@ main {
 
 .top-item {
   position: relative;
+  isolation: isolate;
   flex: 1 1 225px;
   min-width: 225px;
   margin: 0;
@@ -127,6 +128,7 @@ main {
 .top-item::before {
   content: counter(ranking);
   position: absolute;
+  z-index: 0;
   left: 0;
   bottom: 42px;
   color: #141414;
@@ -138,6 +140,8 @@ main {
   font-weight: 600;
 }
 .top-item img {
+  position: relative;
+  z-index: 1;
   aspect-ratio: 2/3;
   object-fit: contain;
   background: #0b0b0b;

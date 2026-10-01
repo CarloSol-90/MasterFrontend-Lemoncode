@@ -20,7 +20,7 @@ img {
   height: auto;
 }
 
-// Sticky mantiene la cabecera visible sin sacarla del flujo de la pï¿½gina.
+// Sticky mantiene la cabecera visible sin sacarla del flujo de la página.
 header {
   position: sticky;
   top: 0;
@@ -132,16 +132,18 @@ main {
 
 .top-item {
   position: relative;
+  isolation: isolate;
   flex: 1 1 225px;
   min-width: 225px;
   margin: 0;
   padding-left: 45px;
   counter-increment: ranking;
 
-  // Los nï¿½meros se generan aquï¿½: no forman parte de las carï¿½tulas.
+  // El número queda detrás de la carátula dentro de cada tarjeta.
   &::before {
     content: counter(ranking);
     position: absolute;
+    z-index: 0;
     left: 0;
     bottom: 42px;
     color: $background;
@@ -154,6 +156,8 @@ main {
   }
 
   img {
+    position: relative;
+    z-index: 1;
     aspect-ratio: 2 / 3;
     object-fit: contain;
     background: #0b0b0b;
@@ -195,7 +199,7 @@ main {
   aspect-ratio: 16 / 9;
   background: #090909;
 
-  // Conserva tï¿½tulos y caras aunque las imï¿½genes tengan proporciones distintas.
+  // Conserva títulos y caras aunque las imágenes tengan proporciones distintas.
   img {
     height: 100%;
     object-fit: contain;
@@ -285,7 +289,7 @@ footer {
   }
 }
 
-// En pantallas muy pequeï¿½as, el contenido se ajusta al espacio disponible.
+// En pantallas muy pequeñas, el contenido se ajusta al espacio disponible.
 @media (max-width: 281px) {
   .studio-logo {
     width: 80px;
